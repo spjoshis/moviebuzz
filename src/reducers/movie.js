@@ -8,7 +8,7 @@ export default (state = {}, action) => {
     case MOVIE_PAGE_LOADED:
       return {
         ...state,
-        movie: action.payload[0],
+        movie: (typeof action.payload[0] !== 'undefined' ? action.payload[0] : {id: 0}),
         comments: []
       };
     case MOVIE_PAGE_UNLOADED:

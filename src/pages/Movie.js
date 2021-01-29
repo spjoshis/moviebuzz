@@ -24,15 +24,16 @@ class Movie extends React.Component {
   }
 
   render() {
-    if (!this.props.movie) {
-      return <div className="container no-movie">
-        <h1 className='text-center'>{getContent('no-movie')}</h1>
-      </div>
-    }
-
+    console.log('this.props', this.props.movie)
     if (!this.props.movie) {
       return <div className="container">
         <p className='text-center'>{getContent('loading')}</p>
+      </div>
+    }
+
+    if (this.props.movie.id === 0) {
+      return <div className="container no-movie">
+        <h1 className='text-center'>{getContent('no-movie')}</h1>
       </div>
     }
 
@@ -114,7 +115,7 @@ class Movie extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  ...state.movie,
+  ...state.movie
 });
 
 const mapDispatchToProps = dispatch => ({
