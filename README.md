@@ -1,10 +1,39 @@
-# ![React App]
+# [React + Redux App]
 
-## Getting started
+**About The Project**
+This project is Reactjs + Redux application using API of Themoviedb.
+
+
+**Buid with**
+- ReactJS
+- Redux
+
+
+**Installation**
 - Clone this repo
 - `npm install` to install all required dependencies
-- `npm start` to start the local server (this project uses create-react-app)
+- `npm run start` to start the local server
+- `npm run build` to create production build
 
+
+**Demo Server**
+
+URL: https://dashboard.heroku.com/apps/movie-buzz-app
+
+Autodeployment is setup with heroku
+
+
+**Directory Structure:**
+```
+src/
+-- components/ (UI element components)
+-- config/ (Contains all configuration (API endpoints and Keys))
+-- constants/ (Constant files of language content and Redux)
+-- containers/ (Main App component and common header & footer components)
+-- pages/ (This folder contains all page components)
+-- reducers/ (Reducers for all APIs)
+-- utils/ (Common Utilities)
+```
 
 **The general page breakdown looks like this:**
 
