@@ -1,6 +1,4 @@
 # [React + Redux App]
-
-**About The Project**
 This project is Reactjs + Redux application using API of Themoviedb.
 
 
@@ -18,9 +16,7 @@ This project is Reactjs + Redux application using API of Themoviedb.
 
 **Demo Server**
 
-URL: https://dashboard.heroku.com/apps/movie-buzz-app
-
-Autodeployment is setup with heroku
+URL: https://movie-buzz-app.herokuapp.com (Autodeployment is setup with heroku)
 
 
 **Directory Structure:**
